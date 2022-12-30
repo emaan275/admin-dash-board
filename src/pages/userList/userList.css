@@ -1,0 +1,53 @@
+.userList{
+    flex:4;
+
+}
+
+.UserListUser{
+    display: flex;
+    align-items: center;
+}
+
+.typographyText{
+    font-weight: bold;
+    font-size: large;
+} 
+
+.headerBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.userAddButton{
+    width: 150px;
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.UserListImg{
+    width: 32px;
+    height: 32px;
+    border-radius:50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.userListEdit{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.userListDelete{
+    color:red;
+    cursor: pointer;
+}
