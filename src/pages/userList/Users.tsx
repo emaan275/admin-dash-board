@@ -88,11 +88,17 @@ export default function Users() {
   };
   
   const onClickCreate = () =>{
-     data.push(newUser);
-    setDate(data);
-    console.log('data', data, newUser)
+    //  data.push(newUser);
+    //  data : [newUser , ...data];
+    // e.preventDefault()
+    setNemUser({
+      ...newUser,
+      id : data.length +1,
+    });
+     setDate( [ ...data ,newUser] );
+     console.log(data , data);
+    
   }
-   console.log('openDialog' , openDialog);
    
   const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 90 },
