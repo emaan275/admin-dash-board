@@ -73,8 +73,7 @@ export default function Users() {
       status:'',
       group : '',
     });
-    setOpenDialog(true)
-
+    // setOpenDialog(true)
   };
 
   const [openDialog , setOpenDialog] = React.useState(false);
@@ -96,7 +95,7 @@ export default function Users() {
       id : data.length +1,
     });
      setDate( [ ...data ,newUser] );
-     console.log(data , data);
+     console.log('data' , data);
     
   }
    

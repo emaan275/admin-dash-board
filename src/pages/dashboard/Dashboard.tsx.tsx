@@ -18,6 +18,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems } from "../../components/list-item/ListItem";
 import { useStyles } from "./menueStyle";
 import Users from "../userList/Users";
+import { Box } from "@material-ui/core";
 
 
 
@@ -32,7 +33,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className={classes.root}>
+    <Box className={classes.root}>
       <CssBaseline />
       <AppBar
         position="absolute"
@@ -67,7 +68,7 @@ export default function Dashboard() {
           </IconButton>
         </Toolbar>
       </AppBar>
-      <div className={classes.topbar}>
+      <Box className={classes.topbar}>
       <Drawer
         variant="permanent"
         classes={{
@@ -84,7 +85,7 @@ export default function Dashboard() {
         <List>{mainListItems}</List>
         <Divider />
       </Drawer>
-      </div>
+      </Box>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
@@ -93,6 +94,6 @@ export default function Dashboard() {
           </Grid>
         </Container>
       </main>
-    </div>
+    </Box>
   );
 }

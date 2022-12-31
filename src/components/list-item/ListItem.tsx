@@ -8,7 +8,7 @@ import PeopleIcon from "@material-ui/icons/People";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import LayersIcon from "@material-ui/icons/Layers";
 import AssignmentIcon from "@material-ui/icons/Assignment";
-import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@material-ui/core";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@material-ui/core";
 import { ExpandMore} from "@material-ui/icons";
 import './listItem.css';
 
@@ -21,13 +21,14 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
+    <Box className="box">
      <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMore />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>ATM SETTINGS </Typography>
+          <Typography className="typographytitle">ATM SETTINGS </Typography>
         </AccordionSummary>
         <AccordionDetails className="accordionDetails">
         <ListItemText primary="ATM settings1" />
@@ -77,6 +78,7 @@ export const mainListItems = (
         <ListItemText primary="license Management3" />
         </AccordionDetails>
       </Accordion>
+      </Box>
     {/* <ListItem button>
       <ListItemIcon>
         <PeopleIcon />

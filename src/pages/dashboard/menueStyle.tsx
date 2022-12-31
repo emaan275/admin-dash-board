@@ -7,7 +7,9 @@ export const useStyles = makeStyles(theme => ({
       display: "flex"
     },
     toolbar: {
-      paddingRight: 10 // keep right padding when drawer closed
+      paddingRight: 10,
+      backgroundColor: "#050e2d",
+       // keep right padding when drawer closed
     },
     
     toolbarIcon: {
@@ -47,7 +49,7 @@ export const useStyles = makeStyles(theme => ({
       width: drawerWidth,
       transition: theme.transitions.create("width", {
         easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.enteringScreen
+        duration: theme.transitions.duration.enteringScreen,
       })
     },
     drawerPaperClose: {

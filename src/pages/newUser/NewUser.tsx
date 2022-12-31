@@ -7,12 +7,12 @@ import { UserInterface } from "../../moduls/Types";
 export interface NewUserProps {
   onClickCancel(): void;
   onClickCreate(): void;
-  onChangeFullName(value: string): void;
-  onChangeUserName(value: string): void;
-  onChangeEmail(value: string): void;
-  onChangeGroup(value: string): void;
-  onChangeProfile(value: string): void;
-  onClickReset(value: string): void;
+  onChangeFullName(value: any): void;
+  onChangeUserName(value: any): void;
+  onChangeEmail(value: any): void;
+  onChangeGroup(value: any): void;
+  onChangeProfile(value: any): void;
+  onClickReset(value: any): void;
 }
 
 export function NewUser(props: NewUserProps) {
@@ -86,7 +86,7 @@ export function NewUser(props: NewUserProps) {
         </button>
       </Box>
       <Box className="newUser">
-        {/* <form className="newUserForm"> */}
+        <form className="newUserForm">
           <Box className="newUserItem">
             <label>Full Name</label>
             <input
@@ -136,11 +136,11 @@ export function NewUser(props: NewUserProps) {
             <button className="cancelButton" onClick={onClickCancel}>
               cancel
             </button>
-            <button className="newUserButton" onClick={onClickCreate}>
+            <button className="newUserButton" type='button' onClick={onClickCreate}>
               Create
             </button>
           </Box>
-        {/* </form> */}
+        </form>
       </Box>
     </>
   );

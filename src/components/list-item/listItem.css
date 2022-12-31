@@ -5,3 +5,11 @@
     justify-content: space-between;
     flex-direction: column;
 }
+
+.typographytitle{
+    color:'white'
+}
+
+.box{
+    background-color: #050e2d;
+}
